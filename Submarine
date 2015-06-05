@@ -1,0 +1,46 @@
+
+
+//header
+
+#include "Sailor";
+#include "Ship";
+
+class Submarine : public Ship 
+{
+	public :
+		Submarine(std::string aName);
+
+		void addSailor(Sailor aSailor);
+
+	private :
+		std::vector<Sailor> mSailors;
+		std::string mName;
+		int mCapacity;
+}
+
+
+// class implementation
+
+class Submarine
+{
+	Submarine::Submarine(std::string aName, int aCapacity) :
+	mSailors(NULL),
+	mName(aName),
+	mCapacity(aCapacity)
+	{
+	
+	}
+
+	void Submarine::addSailor(Sailor aSailor)
+	{
+	
+	}
+
+	void Submarine::getName()
+	{
+		
+	}
+}
+
+
+

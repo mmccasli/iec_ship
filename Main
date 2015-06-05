@@ -1,0 +1,27 @@
+
+
+include "Ship";
+include "Submarine";
+include “Carrier”;
+
+int main()
+{
+	Ship tShip = new Ship("SKY_BLIMP", 100);
+
+	Ship tSubmarine = new Submarine("SUBMARINE", 10);
+
+	Ship tCarrier = new Carrier(“CARRIER”, 1000);
+
+	// What is the output of these lines?
+
+	std::cout << "tShip Name: "      << tShip.getName()      << std::endl;
+	std::cout << “tSubmarine Name: " << tSubmarine.getName() << std::endl;
+	std::cout << “tCarrier Name: “   << tCarrier.getName()   << std::endl;
+
+	std::cout << "tShip Capacity: "      << tShip.getCapacity()      << std::endl;
+	std::cout << “tSubmarine Capacity: " << tSubmarine.getCapacity() << std::endl;
+	std::cout << “tCarrier Capacity: “   << tCarrier.getCapacity()   << std::endl;
+
+	//Output the complete names (Prefix + Name), and then fire torpedo
+	
+}

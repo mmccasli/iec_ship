@@ -1,0 +1,36 @@
+
+
+//header
+
+#include "Ship";
+
+class Carrier : public Ship 
+{
+	public :
+		Carrier(std::string aName);
+
+	private :
+		std::string mName;
+		int mCapacity;
+}
+
+
+// class implementation
+
+class Carrier
+{
+	Carrier::Carrier(std::string aName, int aCapacity) :
+	mName(aName),
+	mCapacity(aCapacity)
+	{
+	
+	}
+
+	void Carrier::getName()
+	{
+	
+	}
+}
+
+
+

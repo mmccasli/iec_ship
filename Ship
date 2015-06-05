@@ -1,0 +1,55 @@
+
+
+//header
+
+class Ship
+{
+	public :
+		Ship();
+
+		std::string getName();
+
+		virtual int getCapacity();
+
+		virtual void fireTorpedo() = 0;
+
+		static string getPrefixName () { return "USS_"};
+
+	private :
+		std::string mName;
+		int mCapacity;
+}
+
+
+// class implementation
+
+class Ship
+{
+	Ship::Ship(std::string aName, int aCapacity) :
+	mName(aName),
+	mCapacity(aCapacity) 
+	{
+	
+	}
+
+	std::string Ship::getName()
+	{
+
+	}
+
+	int Ship::getCapacity()
+	{
+
+	}
+
+	void Ship::fireTorpedo()
+	{
+
+	}
+}
+
+
+
+
+
+
